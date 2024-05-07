@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     font-family:"Italiana", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
 }
 header{
     font-family: "Open Sans", sans-serif;
@@ -90,5 +95,22 @@ img[alt='logo']{
 body{
     background-color: #CE4B82;
 }
-
-
+section{
+    text-align: center;
+    font-size: medium;
+    font-family: "Italiana", sans-serif;
+}
+img[class='Last']{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+#Skills :is(img){
+    width: 5rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
