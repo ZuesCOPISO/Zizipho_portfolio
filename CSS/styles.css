@@ -114,3 +114,9 @@ img[class='Last']{
     object-fit: cover;
     object-position: center;
 }
+.card{
+    background-color: rgb(225, 130, 130);
+    width: auto;
+    text-align: center;
+    
+}
