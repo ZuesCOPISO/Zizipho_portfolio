@@ -1,16 +1,78 @@
 :root{
     --primary: #CE4B82; 
-    --secondary:#5D0665;
+    --secondary:#b406c4;
     --tertiary: #ba246c;
     --text-color: rgb(228, 221, 228);
+    --accent:rgb(192, 99, 89); 
     /* box-shadow: slategray; */
     --alternative: hsla(100,13%,28%,0,7);
-    --bgHeaderFooter: #5D0665;
+    --bgHeaderFooter: #7a0584;
     --awesome: darkolivegreen;
     --bgCAbout: #56744e;
     --mainBox-shaddow: .2rem .2rem .1rem .2rem rgba(105,96,96,0.75);
     --card-box-shaddow: .5vw .5vw 1vw rgba(85,94,99,0.9);
     --text-shadow: .3rem .3rem .4rem rgba(78,107,91,0.5);
-    --mainBg: hsla(145,83%,20%,0.39);
+    --mainBg: hsla(146, 4%, 65%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg));
 }
+
+
+@property --top-left {
+    syntax:"<percentage>";
+    inheritS: false;
+    initial-value:50%;
+}
+
+@property --Top-right {
+    syntax: "<percentage>";
+    inherits:false;
+    initial-value: 50%;
+}
+
+@property --bottom-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value:0%;
+}
+@property --bottom-right {
+    syntax:"<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+/* nav bar & Footer */
+:is(.navbar, footer){
+    background-color: var(--bgHeaderFooter);
+}
+/* nav bar */
+:is(.nav-link){
+    color: var(--secondary);
+}
+a { 
+    transition: all .5s;
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
+
+img[alt='logo']{
+    width: 50px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+/* Grid layout */
+:is(body){
+    display: grid;
+    text-align: center;
+
+}
+/* create 3 rows */
+:is(body){
+    grid-template-rows: auto
+     minmax(100%, 100dvh) auto;
+}
+body{
+    background-color: #CE4B82;
+}
+
