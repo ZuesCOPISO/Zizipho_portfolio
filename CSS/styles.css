@@ -1,0 +1,16 @@
+:root{
+    --primary: #CE4B82; 
+    --secondary:#5D0665;
+    --tertiary: #ba246c;
+    --text-color: rgb(228, 221, 228);
+    /* box-shadow: slategray; */
+    --alternative: hsla(100,13%,28%,0,7);
+    --bgHeaderFooter: #5D0665;
+    --awesome: darkolivegreen;
+    --bgCAbout: #56744e;
+    --mainBox-shaddow: .2rem .2rem .1rem .2rem rgba(105,96,96,0.75);
+    --card-box-shaddow: .5vw .5vw 1vw rgba(85,94,99,0.9);
+    --text-shadow: .3rem .3rem .4rem rgba(78,107,91,0.5);
+    --mainBg: hsla(145,83%,20%,0.39);
+    --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg));
+}
