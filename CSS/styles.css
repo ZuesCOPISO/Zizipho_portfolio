@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body{
     font-family:"Italiana", sans-serif ;
     font-optical-sizing: auto;
@@ -114,9 +113,59 @@ img[class='Last']{
     object-fit: cover;
     object-position: center;
 }
-.card{
-    background-color: rgb(225, 130, 130);
-    width: auto;
-    text-align: center;
+#home :is(img){
+    width:500px ;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
     
 }
+
+.card{
+    background-color: rgb(244, 174, 219);
+    width: auto;
+    text-align: center;
+
+}
+.flip-picture{
+    background-color: transparent;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    perspective: 1000px;
+    margin: 2rem;
+  }
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-picture:hover .overlay {
+    transform: rotateY(180deg);
+  }
+  .front-picture, .back-picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .front-picture {
+    background-color: #bbb;
+    color: black;
+  }
+  .back-picture {
+    background-color: #474e53;
+    color: white;
+    transform: rotateY(180deg);
+  }
+ 
+/* img[alt='Amy']{
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+} */
