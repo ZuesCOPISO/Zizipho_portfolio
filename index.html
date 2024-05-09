@@ -49,7 +49,37 @@
             100% {
                 opacity: 0;
             }
-        } 
+        }
+        .card {
+      opacity: 0;
+      position: relative;
+      animation: slide 4s infinite;
+    }
+    
+    @keyframes slide {
+      0%, 100% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      25%, 75% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    /* Delay for each card */
+    .card:nth-child(1) {
+      animation-delay: 0s;
+    }
+    
+    .card:nth-child(2) {
+      animation-delay: 1s;
+    }
+    
+    .card:nth-child(3) {
+      animation-delay: 2s;
+    }
+
         </style>
     <title>Zizipho_Portfolio</title>
   </head>
@@ -91,296 +121,304 @@
           </ul>
         </div>
       </nav>
-      <SECTION class="section">
-      <div class="w3-padding-large" id="main">
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-          <h1 class="animated-text">Hello,<span class="w3-hide-small">I'm</span> Zizipho Copiso.</h1>
-           <h1 class="animated-text"> 
-          <p>Aspiring Web Designer & Full Stack Developer.</p>
-            </h1>
-        <div class="flip-picture">
-            <div class="overlay">
-              <div class="front-picture">
-            <img class="fade-in-out" src="https://zuescopiso.github.io/All-My-Images/images/Zizipho_Copis.jpg" alt="Homepage Picture"  width="450px" height="500px" loading="lazy">
+    <main class="container-fluid">
+        <section class="container" id="home">
+          <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col">
+                <h1 class="animated-text">Hello,<span class="w3-hide-small">I'm</span> Zizipho Copiso.</h1>
+                <h1 class="animated-text"> 
+                    <p>Aspiring Web Designer & Full Stack Developer.</p>
+                </h1>
             </div>
-            <div class="back-picture">
-            <img class= fade-in-out src="https://zuescopiso.github.io/All-My-Images/images/20240422_102501.jpg" alt="Homepage Picture"style= width 450px ;height="500px" loading="lazy">
-           </div>
-            </div> 
+            <div class="col">
+                <div class="flip-picture col-md-6">
+                    <div class="overlay">
+                      <div class="front-picture">
+                          <img class="fade-in-out" src="https://zuescopiso.github.io/All-My-Images/images/Zizipho_Copis.jpg" alt="Homepage Picture"  width="450px" height="500px" loading="lazy">
+                    </div>
+                    <div class="back-picture">
+                    <img class= fade-in-out src="https://zuescopiso.github.io/All-My-Images/images/20240422_102501.jpg" alt="Homepage Picture"style= width 450px ;height="500px" loading="lazy">
+                   </div>
+                    </div> 
+                </div>
+            </div>
           </div>
-    </div>
-      </header>
-    
-<hr>
-<hr>
-<div class="container" id="About">
-    <!-- <img src="https://zuescopiso.github.io/All-My-Images/images/Zizipho_Copis.jpg" alt="profile_pic"> -->
-    <div class="row">
-        <h2 class="display-2">About Me</h2>
-    </div>
-    <div class="row">
-        
-        <p class="lead">
-
-        I am an  outgoing and highly independent individual. I am able to work on my own but also great with teams. 
-        I am punctual and goal orientated. 
-        I am energetic. with a balanced background in sports and academics. I am reliable and responsible with good communication and 
-        relationship-building abilities.
-        I am a quick learner with academic and technical knowledge to succeed in different roles. I am always ready to
-        help others to work towards team goals.I am attentive to fine details and a stickler for perfection.
-        </p>
-    </div>
-</div>
-<hr>
-<hr>
-<div class="container" id="Resume">
-    <div class="row">
-        <h2 class="display-2">Resume</h2>
-    </div>
-    <div class="row">
-        <p class="lead">
-            Teachers Plus: Student Teacher
-            I volunteered to help teachers prepare for classes and assist students during tasks. 
-            Istudied different subjects by completing extra-curricular activities and courses.
-            I attended school in Heathfield Primary to enrich my learning experience in an immersive environment.
-        </p>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume</button>
-          
-    </div>
-</div>
-<hr>
-<hr>
-<div class="container" id="Skills">
-    <div class="row">
-        <h2 class="display-2">Skills</h2>
-    </div>
-    <div class="row justify-content-center my-2">
-        <ul class="col-2">HTML</ul>
-        <img class="col-3" src="https://zuescopiso.github.io/All-My-Images/images/HTML.png" loading="lazy">         
-    </div>
-    <div class="row justify-content-center">
-        <ul class="col-2">CSS </ul>
-        <img src="https://zuescopiso.github.io/All-My-Images/images/CSS3.png" class="col-3" loading="lazy">       
-
-    </div>
-    <div class="row justify-content-center my-2">
-        <ul class="col-2">Communication</ul>
-        <img src="https://zuescopiso.github.io/All-My-Images/images/communication.png" class="col-3" loading="lazy">
-    </div>
-    <div class="row justify-content-center">
-        <ul class="col-2">Public Speaking</ul>
-        <img src="https://zuescopiso.github.io/All-My-Images/images/black-megaphone-on-white-background-vector-25193086.jpg" class="col-3" loading="lazy">
-    </div>
-</div>
-<hr>
-<hr>
-<div class="container" id="Education">
-    <div class="row">
-        <h2 class="display-2">Education</h2>
-    </div>
-    <div class="row justify-content-center">
-        <!-- <p class="lead">
-        <ul class="col-2">
-            <li>Bachelor's Pass :Luhlaza High School (Matric 2015)</li>
-            <li>University of The Western Cape: Biodiversity and conservation biology (2nd Year)</li>
-            <li>Cape Peninsula University of Technology: Nature conservation</li>
-            <li>Life Choices (currently)</li>
-        </ul>
-        </p> -->
-        <p class="d-inline-flex gap-1">
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Luhlaza High School</a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">University of the Western Cape</button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Cape Peninsula University of Technology</button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">Life Choices</button>
-
-            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button> -->
-          </p>
+      </section>
+      <hr>
+      <hr>
+      <div class="container" id="About">
+          <!-- <img src="https://zuescopiso.github.io/All-My-Images/images/Zizipho_Copis.jpg" alt="profile_pic"> -->
           <div class="row">
-            <div class="col">
-              <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <div class="card card-body">
-                  <ul>
-                    <li>Bachelor's Pass (Matric 2015</li>
-                    <li>Distinctions : Life Orientation & Geography</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-              <div class="collapse multi-collapse" id="multiCollapseExample2">
-                <div class="card card-body">
-                  <ul>
-                    <li>Biodiversity & conservation biology</li>
-                    <li>Certificate in snake handling</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-              <div class="collapse multi-collapse" id="multiCollapseExample3">
-                <div class="card card-body">
-                  <ul>
-                    <li>Nature Conservation (NDipl)</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="collapse multi-collapse" id="multiCollapseExample4">
-                <div class="card card-body">
-                  <ul>
-                    <li>Coding Programme (currently)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
+              <h2 class="display-2">About Me</h2>
           </div>
-    </div>
-</div>
-<hr>
-<hr>
-<div class="container" id="Projects">
-    <div class="row">
-        <h2 class="display-2">Projects</h2>
-        <p class="d-inline-flex gap-1">
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Calculator</a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Keyboard</a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">To-do List</a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Flip Card</a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Keyboard </button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-          </p>
           <div class="row">
-            <div class="col">
-              <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <div class="card card-body">
-                  <link rel="stylesheet" href="https://keyboard-qkbi-s514azdtn-zeus-copisos-projects.vercel.app/">
-                  <img src="https://keyboard-qkbi-s514azdtn-zeus-copisos-projects.vercel.app/" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="collapse multi-collapse" id="multiCollapseExample2">
-                <div class="card card-body">
-                  Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-          </div>
-
-    </div>
-    <div class="row">
-        <p class="lead">
-        
-        </p>
-    </div>
-</div>
-<hr>
-<hr>
-<div class="container" id="Testimonials">
-    <div class="row justify-content-center">
-        <h2 class="display-2">Testimonials</h2>
-
-    </div>
-    <div class="row">
-        <div class ="col-lg-6 card" style="width: 15rem;">
-            <img src ="https://zuescopiso.github.io/All-My-Images/images/IMG-20240507-WA0035.jpg"class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Akhona</h5>
-              <p class="card-text">"Zizipho embodies a remarkable blend of 
-                diligence, ambition, and she naturally loves
-                 to do well. With a commendable work ethic
-                , she consistently strives to achieve her goals,
-                 fueled by a genuine passion for success.
-                 Beyond her professional drive, her pleasant
-                 personality and confidence makes her
-                 presence valuable in every setting".
-                
-                Akhona(Classmate).</p>
               
-            </div>
+              <p class="lead">
+      
+              I am an  outgoing and highly independent individual. I am able to work on my own but also great with teams. 
+              I am punctual and goal orientated. 
+              I am energetic. with a balanced background in sports and academics. I am reliable and responsible with good communication and 
+              relationship-building abilities.
+              I am a quick learner with academic and technical knowledge to succeed in different roles. I am always ready to
+              help others to work towards team goals.I am attentive to fine details and a stickler for perfection.
+              </p>
           </div>
-    
-    <div class="col-lg-6 card" style="width: 15rem;">
-        <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_095248.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mapule Mbuzwana</h5>
-          <p class="card-text">"Zizipho is a determined classmate 
-            who is always looking for ways to improve.
-             she is easy to work with and gives everyone
-             a chance to voice their opinions"
-            
+      </div>
+      <hr>
+      <hr>
+      <div class="container" id="Resume">
+          <div class="row">
+              <h2 class="display-2">Resume</h2>
+          </div>
+          <div class="row">
+              <p class="lead">
+                  Teachers Plus: Student Teacher
+                  I volunteered to help teachers prepare for classes and assist students during tasks. 
+                  Istudied different subjects by completing extra-curricular activities and courses.
+                  I attended school in Heathfield Primary to enrich my learning experience in an immersive environment.
+              </p>
+          <button class="w3-button w3-light-grey w3-padding-large w3-section">
+              <i class="fa fa-download"></i> Download Resume</button>
+                
+          </div>
+      </div>
+      <hr>
+      <hr>
+      <div class="container" id="Skills">
+          <div class="row">
+              <h2 class="display-2">Skills</h2>
+          </div>
+          <div class="row justify-content-center my-2">
+              <ul class="col-2">HTML</ul>
+              <img class="col-3" src="https://zuescopiso.github.io/All-My-Images/images/HTML.png" loading="lazy">         
+          </div>
+          <div class="row justify-content-center">
+              <ul class="col-2">CSS </ul>
+              <img src="https://zuescopiso.github.io/All-My-Images/images/CSS3.png" class="col-3" loading="lazy">       
+      
+          </div>
+          <div class="row justify-content-center my-2">
+              <ul class="col-2">Communication</ul>
+              <img src="https://zuescopiso.github.io/All-My-Images/images/communication.png" class="col-3" loading="lazy">
+          </div>
+          <div class="row justify-content-center">
+              <ul class="col-2">Public Speaking</ul>
+              <img src="https://zuescopiso.github.io/All-My-Images/images/black-megaphone-on-white-background-vector-25193086.jpg" class="col-3" loading="lazy">
+          </div>
+      </div>
+      <hr>
+      <hr>
+      <div class="container" id="Education">
+          <div class="row">
+              <h2 class="display-2">Education</h2>
+          </div>
+          <div class="row justify-content-center">
+              <!-- <p class="lead">
+              <ul class="col-2">
+                  <li>Bachelor's Pass :Luhlaza High School (Matric 2015)</li>
+                  <li>University of The Western Cape: Biodiversity and conservation biology (2nd Year)</li>
+                  <li>Cape Peninsula University of Technology: Nature conservation</li>
+                  <li>Life Choices (currently)</li>
+              </ul>
+              </p> -->
+              <p class="d-inline-flex gap-1">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Luhlaza High School</a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">University of the Western Cape</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Cape Peninsula University of Technology</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">Life Choices</button>
+      
+      
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        <ul>
+                          <li>Bachelor's Pass (Matric 2015)</li>
+                          <li>Distinctions : Life Orientation & Geography</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        <ul>
+                          <li>Biodiversity & conservation biology</li>
+                          <li>Certificate in snake handling</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                      <div class="card card-body">
+                        <ul>
+                          <li>Nature Conservation (NDipl)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="collapse multi-collapse" id="multiCollapseExample4">
+                      <div class="card card-body">
+                        <ul>
+                          <li>Coding Programme (currently)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+          </div>
+      </div>
+      <hr>
+      <hr>
+      <div class="container" id="Projects">
+          <!-- <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+      
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Calculator</h5>
+                      <p class="card-text">This is a basic, not functioning calculator created by using HTML & CSS</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                      <h5 class="card-title">KeyBoard</h5>
+                      <p class="card-text">A keyboard created using HTML and styled using CSS</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                      <h5 class="card-title">To-do List</h5>
+                      <p class="card-text">Basic to-do list created by using HTML and st</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+              </div>
+              <div class="col-md-4">something</div>
+          </div>
+      </div> -->
+      <hr>
+      <hr>
+      <div class="container" id="Testimonials">
+          <div class="row justify-content-center">
+              <h2 class="display-2">Testimonials</h2>
+      
+          </div>
+          <div class="row">
+              <div class ="col-lg-6 card" style="width: 15rem;">
+                  <img src ="https://zuescopiso.github.io/All-My-Images/images/IMG-20240507-WA0035.jpg"class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Akhona</h5>
+                    <p class="card-text">"Zizipho embodies a remarkable blend of 
+                      diligence, ambition, and she naturally loves
+                       to do well. With a commendable work ethic
+                      , she consistently strives to achieve her goals,
+                       fueled by a genuine passion for success.
+                       Beyond her professional drive, her pleasant
+                       personality and confidence makes her
+                       presence valuable in every setting".
+                      
+                      Akhona(Classmate).</p>
+                    
+                  </div>
+                </div>
+          
+          <div class="col-lg-6 card" style="width: 15rem;">
+              <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_095248.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mapule Mbuzwana</h5>
+                <p class="card-text">"Zizipho is a determined classmate 
+                  who is always looking for ways to improve.
+                   she is easy to work with and gives everyone
+                   a chance to voice their opinions"
+                  
+                  </p>
+                
+              </div>
+            </div>
+          <div class="col-lg-6 card" style="width: 15rem;">
+              <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_091901.jpg" class="card-img-top" alt="Amy">
+              <div class="card-body">
+                <h5 class="card-title">Amy Johnson</h5>
+                <p class="card-text">"Zizipho is a fascinating individual, combining an outgoing and bubbly personality with unwavering drive and natural strength. She has an instinctive ability to continuously find solutions, facing issues head on without hesitation. Her communication style is clear and precise, and she speaks confidently and eloquently in any conversation. Her presence inspires confidence, effortlessly capturing the attention of all those around her. She is both memorable and influential."
+                  
+              </p>
+                
+              </div>
+            </div>
+      
+          <div class="col-lg-6 card" style="width: 15rem;">
+              <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_091901.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mapule Mbuzwana</h5>
+                <p class="card-text">"Zizipho is a determined classmate 
+                  who is always looking for ways to improve.
+                   she is easy to work with and gives everyone
+                   a chance to voice their opinions"
+                  
+                  Mapule Mbuzwana (Classmate)</p>
+                
+              </div>
+            </div>
+          <div class="col-lg-6 card" style="width: 15rem;">
+              <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_095248.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mapule Mbuzwana</h5>
+                <p class="card-text">"Zizipho is a determined classmate 
+                  who is always looking for ways to improve.
+                   she is easy to work with and gives everyone
+                   a chance to voice their opinions"
+                  
+                  Mapule Mbuzwana (Classmate)</p>
+                
+              </div>
+            </div>
+      
+          </div>
+      </div>
+      </div>
+      <hr>
+      <hr>
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+          <h2 class="w3-text-light-grey">Contact Me</h2>
+          <hr style="width:200px" class="w3-opacity">
+      
+          <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cape Town, South Africa</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0679159723</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: copisozizipho2@mail.com</p>
+          </div><br>
+          <p>Let's get in touch. Send me a message:</p>
+      
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+              <button class="w3-button w3-light-grey w3-padding-xxlarge" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
             </p>
-          
-        </div>
-      </div>
-    <div class="col-lg-6 card" style="width: 15rem;">
-        <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_091901.jpg" class="card-img-top" alt="Amy">
-        <div class="card-body">
-          <h5 class="card-title">Amy Johnson</h5>
-          <p class="card-text">"Zizipho is a fascinating individual, combining an outgoing and bubbly personality with unwavering drive and natural strength. She has an instinctive ability to continuously find solutions, facing issues head on without hesitation. Her communication style is clear and precise, and she speaks confidently and eloquently in any conversation. Her presence inspires confidence, effortlessly capturing the attention of all those around her. She is both memorable and influential."
-            
-        </p>
-          
-        </div>
-      </div>
-
-    <div class="col-lg-6 card" style="width: 15rem;">
-        <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_091901.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mapule Mbuzwana</h5>
-          <p class="card-text">"Zizipho is a determined classmate 
-            who is always looking for ways to improve.
-             she is easy to work with and gives everyone
-             a chance to voice their opinions"
-            
-            Mapule Mbuzwana (Classmate)</p>
-          
-        </div>
-      </div>
-    <div class="col-lg-6 card" style="width: 15rem;">
-        <img src="https://zuescopiso.github.io/All-My-Images/images/20240422_095248.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mapule Mbuzwana</h5>
-          <p class="card-text">"Zizipho is a determined classmate 
-            who is always looking for ways to improve.
-             she is easy to work with and gives everyone
-             a chance to voice their opinions"
-            
-            Mapule Mbuzwana (Classmate)</p>
-          
-        </div>
-      </div>
-
-    </div>
-</div>
-</div>
-<hr>
-<hr>
-<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cape Town, South Africa</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0679159723</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: copisozizipho2@mail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-xxlarge" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-   <hr>
-   <hr>
+          </form>
+         <hr>
+         <hr>
+         <footer class="bg-dark text-center text-white py-3">
+            <p>&copy; 2024. Zizipho's Portfolio. Copyrights Reserved.</p>
+    </main>
+    
     
 
 <footer class="bg-dark text-center text-white py-3">
