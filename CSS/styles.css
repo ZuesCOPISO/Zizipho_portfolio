@@ -129,11 +129,18 @@ img[class='Last']{
 }
 .flip-picture{
     background-color: transparent;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
     width: 450px;
     height: 500px;
     perspective: 1000px;
     margin: 2rem;
+    border-radius: 100%;
+    /* display: grid;
+    place-items: center;
+    align-items: center; */
+   
+    
   }
   .overlay {
     position: relative;
@@ -152,6 +159,7 @@ img[class='Last']{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
   }
   .front-picture {
     background-color: #bbb;
@@ -163,9 +171,3 @@ img[class='Last']{
     transform: rotateY(180deg);
   }
  
-/* img[alt='Amy']{
-    width: 100px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
-} */
