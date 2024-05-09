@@ -89,7 +89,7 @@ img[alt='logo']{
 /* create 3 rows */
 :is(body){
     grid-template-rows: auto
-     minmax(100%, 100dvh) auto;
+     minmax(1fr, 100dvh) auto;
 }
 body{
     background-color: #CE4B82;
@@ -123,7 +123,6 @@ img[class='Last']{
 
 .card{
     background-color: rgb(244, 174, 219);
-    width: auto;
     text-align: center;
 
 }
@@ -170,4 +169,34 @@ img[class='Last']{
     color: white;
     transform: rotateY(180deg);
   }
- 
+  /* .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  */
+.skills-wrapper >* {
+    margin-block: .5rem;
+}
+
+.skills-wrapper {
+    width: 50%;
+    margin-inline: auto;
+}
+.skills-wrapper li {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    place-items: center;
+}
+button{
+    color: rgb(76, 18, 57);
+    background-color: #a22082;
+    float: inline-start;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 20%;
+    display:inline-block;
+    margin: 10px;
+}
