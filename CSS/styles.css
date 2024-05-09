@@ -25,7 +25,7 @@ header{
     --accent:rgb(192, 99, 89); 
     /* box-shadow: slategray; */
     --alternative: hsla(100,13%,28%,0,7);
-    --bgHeaderFooter: #7a0584;
+    --bgHeaderFooter: antiquewhite;
     --awesome: darkolivegreen;
     --bgCAbout: #56744e;
     --mainBox-shaddow: .2rem .2rem .1rem .2rem rgba(105,96,96,0.75);
