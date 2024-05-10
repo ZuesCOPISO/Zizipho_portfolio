@@ -190,6 +190,7 @@ img[class='Last']{
     grid-template-columns: 5rem 1fr;
     place-items: center;
 }
+/* }
 button{
     color: rgb(76, 18, 57);
     background-color: #a22082;
@@ -199,4 +200,8 @@ button{
     width: 20%;
     display:inline-block;
     margin: 10px;
+} */
+.card-img-top{ 
+    width: 50;
+    height: 50;
 }
